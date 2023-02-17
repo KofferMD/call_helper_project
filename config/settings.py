@@ -19,14 +19,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
+
+INSTALLED_APPS += [
+    'api',
+    'common',
+    'breaks',
+]
+
+INSTALLED_APPS += [
     'rest_framework',
     'django_filters',
     'corsheaders',
-    'api',
-    'common',
     'drf_spectacular',
     'djoser',
-
 ]
 
 MIDDLEWARE = [
